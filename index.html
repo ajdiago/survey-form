@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Course Survey Form</title>
+  <meta name="author" content="Anthony Diagostino">
+  <meta name="description" content="FreeCodeCamp Survey Form Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="headline">
+    <header class="header">
+      <h1 class="title" id="title">Please complete this survey for the course.</h1>
+    </header>
+    <p class="subtitle" id="description">We appreciate your feedback.</p>
+  </div>
+  <main>
+    <container>
+      <form class="feedbackForm" id="survey-form">
+        <div class="name formGroup">
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" class="formField" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="email formGroup">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" class="formField" id="email" placeholder="Enter your email" required></div>
+        <div class="age formGroup">
+          <label id="number-label" for="number">Age:</label>
+          <input type="number" class="formField" id="number" placeholder="Enter your age (optional)" min=17 max=99>
+        </div>
+        <div class="dropdown formGroup">
+          <p>Which class session did you attend?</p>
+          <select id="dropdown" class="formField">
+            <option disabled selected value>Select class session</option>
+            <option value="Monday/Wednesday AM">Monday/Wednesday AM</option>
+            <option value="Monday/Wednesday PM">Monday/Wednesday PM</option>
+            <option value="Tuesday/Thursday AM">Tuesday/Thursday AM</option>
+            <option value="Tuesday/Thursday PM">Tuesday/Thursday PM</option>
+            <option value="Saturday">Saturday</option>
+          </select>
+        </div>
+        <div class="feedback formGroup">
+          <p>Please rate each of the following:</p>
+          <fieldset>
+            <legend>Course Content</legend>
+            <label for="content1"><input name="content" type="radio" id="content1" value="1">1</label>
+            <label for="content2"><input name="content" type="radio" id="content2" value="2">2</label>
+            <label for="content3"><input name="content" type="radio" id="content3" value="3">3</label>
+            <label for="content4"><input name="content" type="radio" id="content4" value="4">4</label>
+            <label for="content5"><input name="content" type="radio" id="content5" value="5">5</label>
+          </fieldset>
+          <fieldset>
+            <legend>Instructional Method</legend>
+            <label for="method1"><input name="method" type="radio" id="method1" value="1">1</label>
+            <label for="method2"><input name="method" type="radio" id="method2" value="2">2</label>
+            <label for="method3"><input name="method" type="radio" id="method3" value="3">3</label>
+            <label for="method4"><input name="method" type="radio" id="method4" value="4">4</label>
+            <label for="method5"><input name="method" type="radio" id="method5" value="5">5</label>
+          </fieldset>
+        </div>
+        <div class="formGroup">
+          <p>What could be improved? <span class="hint">(Select all that apply)</span></p>
+          <label for="improveContent"><input name="improve" type="checkbox" id="improveContent" value="Improve Content">Course Content</label>
+          <label for="improveOnline"><input name="improve" type="checkbox" id="improveOnline" value="Offer Online">Offer Online Course</label>
+          <label for="improveMaterials"><input name="improve" type="checkbox" id="improveMaterials" value="Improve Materials">Materials</label>
+          <label for="improveAvailability"><input name="improve" type="checkbox" id="improveAvailability" value="Improve Availability">Course Availability</label>
+        </div>
+        <div class="formGroup">
+          <p>Additional comments or suggestions?</p>
+          <textarea class="formField" id="comments" name="comment" placeholder="Enter comments here"></textarea>
+        </div>
+        <div class="formGroup">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </container>
+  </main>
+
+  <!--Test Tool-->
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</body></html>

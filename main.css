@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(media/business-meeting.jpg);
+  background-color: #84aaaf
+}
+
+.headline {
+  display: block;
+  background: rgba(156, 150, 192, 0.65);
+  max-width: 80%;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.feedbackForm {
+  background: linear-gradient(#cdebb0, #f5fbef);
+  max-width: 80%;
+  margin: auto;
+}
+
+.formGroup {
+  font-family: 'Roboto';
+  font-size: 1.35rem;
+  padding: 7px;
+}
+
+.formField {
+  display: block;
+  border-radius: 5px;
+  line-height: 1.5rem;
+  width: 100%;
+  margin: 5px auto 0px;
+  padding: 5px;
+}
+
+option {
+  font-family: 'Robto';
+  display: block;
+}
+
+p {
+  display: block;
+  margin: 5px;
+}
+
+
+fieldset {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+
+
+label {
+  display: block;
+  font-size: 1.25rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+button {
+  display: block;
+  width: 90%;
+  margin: auto;
+  height: 3.2rem;
+  background-color: #84aaaf;
+  color: #eae8f2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+  border: none;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2)
+}
